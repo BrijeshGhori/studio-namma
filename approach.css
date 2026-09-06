@@ -28,7 +28,7 @@ html, body {
   background: #243EFF;
   border-radius: 50%;
   pointer-events: none;
-  visibility: hidden;
+  /* visibility: hidden; */
   z-index: 999;
 }
 
