@@ -1,0 +1,604 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #E4E4E4;
+  overflow-x: hidden;
+}
+ 
+@font-face {
+    font-family: "Mixtape";
+    src: url("MixtapeExtraCondensed_Trial-ExtraBold.otf");
+}
+
+@font-face {
+    font-family: "Mixtape Regular";
+    src: url("68cab20c0e1c2178793b353b_Mixtape-NormalRegular.otf");
+}
+
+.cursor-dot {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  background: #243EFF;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+nav{
+    height: 7%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+}
+
+nav>a{
+    font-family: "IBM Plex Mono";
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin: 20px;
+    color: #101010;
+}
+
+nav>a:nth-child(2){
+    margin-left: 6.5%;
+}
+nav>a:nth-child(3){
+    margin-left: 41.5%;
+}
+nav>a:nth-child(4){
+    margin-left: 20.5%;
+    margin-right: 1.5%;
+}
+
+nav>a:link,:active,:hover,:visited{
+    text-decoration: none;
+}
+
+.hero1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero1-text{
+    font-family: "Mixtape";
+    font-size: 13em;
+    font-weight: 900;
+    letter-spacing: -9px;
+    line-height: 170px;
+    text-align: center;
+    margin: 0px 5%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 200%;
+    width: 100%;
+}
+.footer-section1{
+    display: flex;
+    height: 30%;
+    width: 100%;
+}
+
+.left{
+    width: 60%;
+    height: 100%;
+    margin-left: 1%;
+}
+
+.footer-text1{
+    font-family: "Mixtape";
+    font-size: 10em;
+    font-weight: 900;
+    letter-spacing: -9px;
+    line-height: 140px;
+    margin-left: 1%;
+}
+.footer-text1>img{
+    height: 110px;
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.right{
+    height: 100%;
+    width: 40%;
+}
+
+.footer-text2{
+    font-family: "Mixtape Regular";
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 2%;
+    margin-left: -5%;
+}
+.footer-text3{
+    font-family: "IBM Plex Mono";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-top: 5%;
+    margin-left: -5%;
+}
+
+.video-section{
+    display: flex;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    gap: 1.5%;
+    margin: 10% 1.3%;
+}
+
+.footer-video{
+    width: 15%;
+    height: max-content;
+}
+
+.footer-video>video{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.footer-links{
+    width: 100%;
+    height: 80%;
+}
+
+.links{
+    height: 30%;
+    width: 100%;
+    display: flex;
+}
+.links-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5%;
+}
+
+.links-left>ul>li{
+    list-style: none;
+    line-height: 23px;
+    font-family: "IBM Plex Mono";
+    font-weight: 200;
+}
+
+.links-left>ul:nth-child(2){
+    margin-top: 3%;
+}
+.links-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5%;
+    gap: 5%;
+}
+
+.links-right-text{
+    font-family: "IBM Plex Mono";
+    font-weight: 200;
+    width: 80%;
+    margin-left: 18%;
+}
+.namma {
+    position: relative;
+    width: calc(100% - 3%);
+    margin: 5rem 1.5% 0;
+    aspect-ratio: 1472 / 475;
+    margin-bottom: -100px;
+}
+
+.footer_logo_fill,
+.footer_logo_stretch {
+    width: 100%;
+    height: 100%;
+}
+
+.footer_logo_fill {
+    position: relative;
+}
+
+.footer_logo_stretch {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.footer_logo_fill .logo-instance {
+    width: 100%;
+    height: 100%;
+}
+
+.footer_logo_stretch .logo-instance {
+    width: 100%;
+    height: 0;
+    transform-origin: top;
+}
+
+.footer_logo_fill svg,
+.footer_logo_stretch svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.whatsapp{
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    right: 1.5%;
+    bottom: 6%;
+    background-color: #243EFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whatsapp>i{
+    color: white;
+    scale: 2;
+    border-radius: 50%;
+}
+/*_________________________________________*/
+
+.hero1-text span{
+    display: inline-block;
+    transform: translateY(50px);
+    opacity: 0;
+    animation-name: text-up;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.hero1-text span:nth-child(1){
+    animation-delay: 0s;
+}
+.hero1-text span:nth-child(2){
+    animation-delay: 0.15s;
+}
+.hero1-text:nth-child(2) span:nth-child(1){
+    animation-delay: 0.3s;
+}
+.hero1-text:nth-child(2) span:nth-child(2){
+    animation-delay: 0.45s;
+}
+.hero1-text:nth-child(3) span:nth-child(1){
+    animation-delay: 0.6s;
+}
+@keyframes text-up {
+    from{
+        transform: translateY(100%) rotate(1deg);
+        opacity: 0;
+    }to{
+        transform: translateY(0%) rotate(0deg);
+        opacity: 1;
+    }
+}
+.hero2{
+    height:fit-content;
+    width:100%;
+    display:flex;
+    margin: 10% 1.4%;
+   
+}
+.hero2L{
+    width: 50%;
+    height: 100%;
+    font-family:"IBM Plex Mono";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing:1.5px;
+    color:#101010;
+    
+}
+.hero2R{
+    width: 50%;height: 100%;
+    font-family:"Mixtape Regular";
+    font-size:20px;
+    line-height:1.6;
+    letter-spacing:1.5%;
+    max-width:670px;
+}
+.hero3{
+    height:fit-content;
+    width:100%;
+    margin: 10% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.hero3-text{
+    display: flex;
+    font-family: "Mixtape";
+    font-size: 9em;
+    font-weight: 900;
+    letter-spacing: -6px;
+    line-height: 140px;
+    text-align: left;
+}
+
+.hero3-text>span{
+    margin: 0 2%;
+}
+.photo{
+    height: 110px;
+    width: 170px;
+    border-radius: 10px;
+    margin-left:2.8% ;
+}
+
+.hero4{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1% 0;
+}
+
+.hero4L{
+    font-family:"IBM Plex Mono";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing:1.5px;
+    width: 50%;
+    height: 100%;
+    padding-left: 1.4%;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content:flex-start;
+    margin-top: 3%;
+}
+.hero4R{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.hero4-text{
+    font-family: "Mixtape";
+    font-size: 4em;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+.hero4-text2{
+    font-family:"Mixtape Regular";
+    font-size:20px;
+    line-height:1.6;
+    letter-spacing:2%;
+    margin-top: 3%;
+    margin-right: 1.4%;
+}
+.idea{
+    height: 100%;
+    width: 100%;
+    margin-top: -14%;
+}
+.hero5L{
+    font-family:"IBM Plex Mono";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing:1.5px;
+    color:#101010;
+    margin-left: 17%;
+    margin-top:-6%;
+}
+.hero5R{
+    height:100%;
+    width:100%;
+}
+.hero5RT{
+height: 30%;
+    width: 100%;
+    margin-top: 5%;
+
+}
+.hero5-text{
+    font-family: "Mixtape";
+    font-size: 4em;
+    letter-spacing: -1px;
+    line-height: 75px;
+    margin-left:34.4%;
+    margin-top: -10.8%;
+}
+.hero5RB{
+    height: 100%;
+    width: 100%;
+    margin-top: -6.5%;
+}
+
+.hero5-text2{
+font-family:"Mixtape Regular";
+    font-size:20px;
+    line-height:1.6;
+    letter-spacing:2%;
+    max-width:7100px;
+    margin-left:34.4%;
+    
+}
+.design{
+    height: 100%;
+    width: 100%;
+    margin-top: -14%;
+    
+}
+.hero6L{
+    font-family:"IBM Plex Mono";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing:1.5px;
+    color:#101010;
+    margin-left: 17%;
+    margin-top:-6%;
+}
+.hero6R{
+    height:100%;
+    width:100%;
+}
+.hero6RT{
+height: 30%;
+    width: 100%;
+    margin-top: 5%;
+
+}
+.hero6-text{
+   font-family: "Mixtape";
+    font-size: 4em;
+    letter-spacing: -1px;
+    line-height: 75px;
+    margin-left:34.4%;
+    margin-top: -10.8%;
+}
+.hero6RB{
+    height: 100%;
+    width: 100%;
+    margin-top: -6.5%;
+}
+
+.hero6-text2{
+font-family:"Mixtape Regular";
+    font-size:20px;
+    line-height:1.6;
+    letter-spacing:2%;
+    max-width:7100px;
+    margin-left:34.4%;
+    
+}
+.coding{
+    height: 100%;
+    width: 100%;
+    margin-top: -14%;
+    
+}
+.hero7L{
+    font-family:"IBM Plex Mono";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing:1.5px;
+    color:#101010;
+    margin-left: 17%;
+    margin-top:-6%;
+}
+.hero7R{
+    height:100%;
+    width:100%;
+}
+.hero7RT{
+height: 30%;
+    width: 100%;
+    margin-top: 5%;
+
+}
+.hero7-text{
+    font-family: "Mixtape";
+    font-size: 4em;
+    letter-spacing: -1px;
+    line-height: 75px;
+    margin-left:34.4%;
+    margin-top: -10.8%;
+}
+.hero7RB{
+    height: 100%;
+    width: 100%;
+    margin-top: -6.5%;
+}
+
+.hero7-text2{
+font-family:"Mixtape Regular";
+    font-size:20px;
+
+    line-height:1.6;
+    letter-spacing:2%;
+    max-width:7100px;
+    margin-left:34.4%;
+    
+}
+.otimisation{
+    height: 100%;
+    width: 100%;
+    margin-top: -14%;
+    
+}
+.hero8L{
+    font-family:"IBM Plex Mono";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing:1.5px;
+    color:#101010;
+    margin-left: 17%;
+    margin-top:-6%;
+}
+.hero8R{
+    height:100%;
+    width:100%;
+}
+.hero8RT{
+height: 30%;
+    width: 100%;
+    margin-top: 5%;
+
+}
+.hero8-text{
+    font-family: "Mixtape";
+    font-size: 4em;
+    letter-spacing: -1px;
+    line-height: 75px;
+    margin-left:34.4%;
+    margin-top: -10.8%;
+}
+.hero8RB{
+    height: 100%;
+    width: 100%;
+    margin-top: -1.5%;
+}
+
+.hero8-text2{
+font-family:"Mixtape Regular";
+    font-size:20px;
+
+    line-height:1.6;
+    letter-spacing:2%;
+    max-width:7100px;
+    margin-left:34.4%;
+}
+.black{
+    height: 100%;
+    width: 100%;
+}
+.card{
+    height:60%;
+    width:20%;
+    background-color: #101010;
+}
+
+.show{
+    background-color: red;
+    transition-duration: 5s;
+}
