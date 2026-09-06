@@ -34,8 +34,10 @@ const offsetX = 20;
 const offsetY = 20;
 
 document.addEventListener("mousemove", (event) => {
-  dot.style.transform =
-    `translate(${event.clientX + offsetX}px, ${event.clientY + offsetY}px)`;
+    dot.style.transform =`translate(${event.clientX + offsetX}px, ${event.clientY + offsetY}px)`;
+    if(dot.style.visibility!="hidden"){
+        dot.style.visibility="visible"
+    }
 });
 
 

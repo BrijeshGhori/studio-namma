@@ -9,6 +9,9 @@ let currentY = 0;
 document.addEventListener("mousemove", (e) => {
     mouseX = e.clientX + 20;
     mouseY = e.clientY + 20;
+    if(cursor.style.visibility!="hidden"){
+        cursor.style.visibility="visible";
+    }
 });
 
 function animate() {
